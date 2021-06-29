@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_actor"
+            android:src="@drawable/master_vijay"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            app:layout_constraintStart_toEndOf="@id/iv_actor"
+            app:layout_constraintTop_toTopOf="@id/iv_actor"
+            app:layout_constraintBottom_toBottomOf="@id/iv_actor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_actor_name"
+                android:text="Vijay"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_actor_movie"
+                android:text="Master"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_actor_salary"
+                android:text="50 cr/movie"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
